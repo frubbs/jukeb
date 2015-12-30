@@ -180,7 +180,7 @@ public class PartyService {
 
         for(Song s : songs) {
             //Song song = songRepository.findByPartyAndId(party, s.getId());
-            System.out.println("s.getSongStatus():" + s.getSongStatus());
+            //System.out.println("s.getSongStatus():" + s.getSongStatus());
             //garantir que apenas uma esta tocando
             if (s.getSongStatus() == SongStatus.PLAYING) {
                 songRepository.stopAllSongs(party.getName());

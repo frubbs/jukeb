@@ -1,7 +1,7 @@
 (function () {
     "use strict";
-    angular.module("jukeB").controller("partyController", ["$scope","Restangular", '$routeParams',"ngDialog","$location","$interval",
-    function($scope, Restangular, $routeParams, ngDialog, $location, $interval) {
+    angular.module("jukeB").controller("partyController", ["$scope","Restangular", '$routeParams',"ngDialog","$location","$interval",'$window',
+    function($scope, Restangular, $routeParams, ngDialog, $location, $interval, $window) {
         $scope.teste = "hello world partyController";
         $scope.teste2 = "h2e2l2l2o2 2w2o2r2ld partyController";
 
@@ -52,6 +52,17 @@
             }
             //console.log("$scope.currentImage:" + $scope.currentImage);
         }, 5000, 0);
+
+        $scope.$watch(function(){
+            return $window.innerWidth;
+        }, function(value) {
+            console.log(value);
+            $scope.snapOpts = {
+                disable: 'right',
+                maxPosition: value*0.85,
+                minPosition: -266,
+            };
+        });
 
         $scope.snapOpts = {
             disable: 'right',

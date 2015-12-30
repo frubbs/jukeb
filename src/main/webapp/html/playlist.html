@@ -5,7 +5,7 @@
             <li ng-repeat="musicItem in musicItemList">
                 <div class="musicListItem" style="background:url('http://rafaelhenrique.net/djrus/images/img02.png'); background-size: 100% 100%; ">
                     <div class="musicListItemName">
-                        <span>{{musicItem.album.artist.name}} - {{musicItem.name}}</span>
+                        <span>{{musicItem.name}} ({{musicItem.album.artist.name}})</span>
                     </div>
                     <div class="arrows">
                         <div class="uparrow">
@@ -25,6 +25,5 @@
 </div>
 
 
-</div>
 
 <h1>Playlist</h1>
