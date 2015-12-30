@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jukeB">
+<head>
+    <meta charset="UTF-8">
+    <title>jukeB</title>
+    <link href="bower_components/angular-carousel/dist/angular-carousel.css" rel="stylesheet" type="text/css" />
+
+    <link href="bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+</head>
+<body>
+<div id="logo">
+    <h1><span>j</span>jukeB</h1>
+</div>
+<div ng-controller="jukeBController">
+    <div id="bg">
+        <ul rn-carousel rn-carousel-index="3" rn-carousel-auto-slide="3">
+            <li><img src="images/rev%20(2).JPG" /></li>
+            <li><img src="images/rev%20(3).JPG" /></li>
+            <li><img src="images/rev%20(4).JPG" /></li>
+            <li><img src="images/rev%20(5).JPG" /></li>
+            <li><img src="images/rev%20(1).JPG" /></li>
+
+        </ul>
+    </div>
+
+    <span class="fa-stack fa-l fa-5x" id="btnPhoto">
+          <i class="fa fa-circle fa-stack-2x fa-5x"></i>
+        <i class="fa fa-camera fa-stack-1x fa-inverse "></i>
+    </span>
+
+
+    <div id="wrap">
+        <h1>Content</h1>
+        <p>More stuff here</p>
+    </div>
+    {{teste}}
+
+
+    <li>Slide 1</li>
+    <li>Slide 2</li>
+    <li>Slide 3</li>
+    <li>Slide 4</li>
+    <li>Slide 5</li>
+    <li>Slide 6</li>
+    <li>Slide 7</li>
+    <li>Slide 8</li>
+    <li>Slide 9</li>
+    </ul>
+
+    <div class="col">
+        <div class="pessoal" id="pess">
+            <a href="pessoal.html"><i class="fa fa-smile-o"></i></i></a>
+            </span>
+        </div>
+    </div>
+
+</div>
+</body>
+
+<script src="bower_components/angular/angular.min.js"></script>
+
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+
+
+
+<script src="js/jukeBModule.js"></script>
+
+
+
+</html>

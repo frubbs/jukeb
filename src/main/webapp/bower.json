@@ -1,0 +1,21 @@
+{
+  "name": "jukeb",
+  "authors": [
+    "frubbs <rafaelhss@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-carousel": "~1.0.1"
+  }
+}

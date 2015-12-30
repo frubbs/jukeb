@@ -1,0 +1,588 @@
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding: 0px;
+	background: #FFB42F url(images/img02.png) repeat-x left top;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+	color: #6F644C;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+h2
+{
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	color: #860659;
+}
+
+p, ol, ul
+{
+	margin-top: 0px;
+}
+
+p
+{
+	line-height: 180%;
+}
+
+strong
+{
+}
+
+a
+{
+	color: #860659;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+a img
+{
+	border: none;
+}
+
+img.border
+{
+}
+
+img.alignleft
+{
+	float: left;
+	margin-right: 30px;
+}
+
+img.alignright
+{
+	float: right;
+}
+
+img.aligncenter
+{
+	margin: 0px auto;
+}
+
+.image-style img
+{
+	border-radius: 30px 0px 0px 0px;
+}
+
+hr
+{
+	display: none;
+}
+
+/** WRAPPER */
+
+#wrapper
+{
+	position: relative;
+	margin-bottom: 50px;
+	
+}
+
+.container
+{
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+/** HEADER */
+
+#header
+{
+	overflow: hidden;
+}
+
+/** LOGO */
+
+#logo
+{
+}
+
+#logo h1, #logo p
+{
+	margin: 0px;
+	line-height: normal;
+}
+
+#logo h1 a
+{
+	padding-left: 30px;
+	text-decoration: none;
+	font-family: 'Satisfy', cursive;
+	font-size: 2.20em;
+	font-weight: 700;
+	color: #860659;
+}
+
+/** MENU */
+
+#menu
+{
+
+}
+
+#menu ul
+{
+	margin: 0px;
+	padding: 20px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li
+{
+	padding: 0px 0px 20px 0px;
+}
+
+#menu a
+{
+
+}
+
+#menu a:hover
+{
+	text-decoration: underline;
+}
+
+/** PAGE */
+
+#page
+{
+	position: relative;
+}
+
+/** CONTENT */
+
+#content
+{
+	position: absolute;
+	right: 10px;
+	width: 725px;
+	padding: 10px 10px 40px 10px;
+	background: #FFDA99;
+	box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255,0.50);
+	border-radius: 40px 0px 40px 0px;
+	height:85vh;
+	
+}
+
+#content h2 a
+{
+	display: block;
+	padding: 0px 0px 20px 0px;
+	text-decoration: none;
+	font-size: 1.50em;
+	color: #860659;
+	font-weight: 400;
+}
+
+#content .subtitle
+{
+	padding: 0px 0px 20px 0px;
+	font-size: 2.00em;
+	font-weight: 400;
+}
+
+#content .post
+{
+	padding: 40px;
+
+}
+
+.jp-jplayer{
+	position:absolute;
+	float:rigth;
+}
+#box1 .lyrics {
+	text-decoration: none;
+	color: #860659;
+	width:50%;
+	position: relative;
+	left: 200px;
+
+}
+
+#box1 .lyrics  marquee{
+	height: 100px;
+	width: 450px;
+}
+
+#box1 {
+    position: relative;
+
+}
+
+.bg {
+
+	background: #FFB42F url(http://www.billboard.com.br/wp-content/uploads/2015/07/640_meghan_trainor_cosmopol.jpg) repeat-x left top;
+
+
+	 -webkit-filter: sepia(100%) opacity(10%);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+	position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+	width:100%;
+	height:100%;
+
+
+
+}
+.musicPlayingStats{
+position:relative;
+left:200px;
+}
+
+.musicPlayingStats img{
+width:40px;
+height:40px;
+padding-right:5px;
+}
+
+.musicPlayingStats div{
+display:inline-block;
+}
+
+.musicPlayingStats span
+{
+ /*   display: block;*/
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.20em;
+	text-align:right;
+	color: #FFFFFF;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	  display: inline-block;
+      vertical-align: middle;
+
+      line-height: normal;
+	position:relative;
+	top:-20px;
+	padding-left:20px;
+	padding-right:10px;
+}
+
+
+.separator{
+width:2px;
+height:40px;
+background-color: #B01E73;
+display:inline-block;
+}
+
+#box2
+{
+	margin: 0px 40px;
+	padding: 40px 0px;
+	border-top: 1px solid #DDBE88;
+}
+
+/** SIDEBAR */
+
+#sidebar
+{
+	position: absolute;
+	width: 400px;
+	left: -50px;
+	top: 50px;
+}
+
+.box
+{
+	overflow: hidden;
+	padding: 40px 40px;
+	background: #B01E73;
+	box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255,0.90);
+	border-radius: 0px 40px 0px 40px;
+}
+
+/* Footer */
+
+#footer
+{
+	margin: 0px 40px;
+	border-top: 1px solid #DDBE88;
+}
+
+#footer p
+{
+	padding: 30px 0px 0px 0px;
+	text-align: center;
+}
+
+#footer a
+{
+}
+
+.border
+{
+}
+
+.title {
+position:relative;
+left: 130px;
+top: -105px;
+-webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+font-size: 22pt;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 5px rgb(255,255,255) , 0 0 10px rgb(255,255,255) , 0 0 15px rgb(255,255,255) , 0 0 20px rgb(176,30,115) , 0 0 35px rgb(176,30,115) , 0 0 40px rgb(176,30,115) , 0 0 50px rgb(176,30,115) , 0 0 75px rgb(176,30,115) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+
+
+#jquery_jplayer_1{
+position:relative;
+left:300px;
+
+}
+
+#drop_zone {
+  border: 2px dashed #bbb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+	padding: 10px;
+
+  font: 20pt bold 'Vollkorn';
+  color: #bbb;
+}
+
+.player
+{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	top:-105px;
+	float:right;
+
+	position: relative;
+}
+
+.musicPlayingItemName  {
+	color: #FFFFFF;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	/*border: 3px solid #123456;*/
+	width:80%;
+	position: relative;
+	left:80px;
+	top:10px;
+	height: 100px;
+	text-align:center;
+	font-style: italic;
+	font-size: 2.40em;
+
+}
+
+
+
+
+
+.musicListItem {
+	
+	/*Border: 5px solid rgba(255, 0, 0, .5);*/
+	width:100%;
+	/*padding: 0px 0px 10px 0px;*/
+	height: 70px;
+	line-height: 70px;
+	/*padding: -2px;*/
+
+	box-shadow: inset 0 0 1.2em 1.2em #B01E73;
+		
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.musicListItemName  {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.20em;
+	text-align:right;
+	color: #FFFFFF;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	/*border: 1px solid #123456;*/
+	width:50%;
+	position: absolute;
+	
+	height: 100%;
+    line-height: 70px;
+
+}
+
+.musicListItemName  span{
+      display: inline-block;
+      vertical-align: middle;
+    
+      line-height: normal;
+}
+
+
+
+
+.musicListItemPic img
+{
+	border-radius: 40px;
+	Border: 5px solid #FFFFFF;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	height :60px;
+	width :60px; 
+	float:right;
+	
+	position: relative;
+}
+
+
+.arrows {
+	/*height:100%;
+	line-height: 100%;
+	text-align: center;
+	width:20px;
+	*/
+	color: #FFFFFF;
+	
+	
+	float:right;
+	
+	/*Border: 2px solid #000FF0;*/
+		
+    padding: 0px 0px 0px 8px;		
+	width: 15px;
+    height: 60%;
+    line-height: 35px;
+    text-align: center;
+      
+}
+
+.uparrow {
+	 display: inline-block;
+     vertical-align: middle;
+    
+     line-height: normal;
+	 /*Border: 1px solid #0222F0;*/
+	 
+	 width: 100%;
+	 height:50%;
+	  
+	  
+	  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	  color:green;
+	/*background-image: url(http://www.clker.com/cliparts/0/7/4/2/1206569735140917528pitr_green_arrows_set_1.svg.med.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+	  
+}
+
+.downarrow {
+display: inline-block;
+      vertical-align: middle;
+    
+	width: 100%;
+	height:50%;
+	
+      line-height: normal;
+	  
+	/*background-image: url(http://www.clker.com/cliparts/e/a/c/a/12065697821256125215pitr_red_arrows_set_5.svg.med.png);
+    background-repeat: no-repeat;
+	background-size: 100% 100%;    */
+	color:red;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	
+}
+
+
+.played {
+	opacity: 0.3;
+}
+
+.toplay {
+	opacity: 0.8;
+}
+
+
+
+
+
+/** LIST STYLE 1 */
+/*
+ul.style1 {
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	list-style: none;
+}
+
+ul.style1 li {
+	clear: both;
+	margin-bottom: 25px;
+	padding: 30px 0px 40px 0px;
+	border-top: 1px solid #DDBE88;
+}
+
+ul.style1 h3 {
+	padding-bottom: 5px;
+	font-size: 14px;
+	color: #574E3C;
+}
+
+ul.style1 p {
+	line-height: 150%;
+}
+
+ul.style1 .button-style {
+	float: left;
+	margin-top: 0px;
+}
+
+ul.style1 .first {
+	padding-top: 0px;
+	border-top: none;
+	box-shadow: none;
+}
+
+
+*/
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<div id="shelf-1" snap-drawer style="background:url('http://rafaelhenrique.net/djrus/images/img02.png');">
+    <div ng-include="'html/playlist.html'"></div>
+
+    <button class="btn btn-primary btn-small" snap-close>Done</button>
+</div>
+<div id="content" class="scrollable" snap-content snap-options="snapOpts">
+
+    <button class="transparentButton" snap-toggle="left" ng-click="getSongs(partyName)" id="playlistButton">
+            <i class="fa fa-music fa-3x"></i>
+            <i class="fa fa-chevron-right fa-3x"></i>
+    </button>
+
+    <div id="logo">
+        <h1><span>j</span>jukeB.net/{{partyName}}</h1>
+
+    </div>
+    bem vindo a sua festa ({{partyName}}dd)
+    {{currentImage}}
+
+    <div ng-controller = "uploadController" id="btnPhoto">
+        <label for="upload">
+                <span class="fa-stack fa-l fa-5x">
+                    <i class="fa fa-circle fa-stack-2x fa-5x"></i>
+                    <i class="fa fa-camera fa-stack-1x fa-inverse "></i>
+                </span>
+            <input type="file"  id="upload" style="display:none" file-model="myFile"/>
+        </label>
+        <button ng-show="fileSet()"  ng-click="uploadFile(partyName)" class="transparentButton">
+                <span class="fa-stack fa-l fa-3x" >
+                    <i class="fa fa-circle fa-stack-2x fa-3x"></i>
+                    <i class="fa fa-upload fa-stack-1x fa-inverse "></i>
+                </span>
+        </button>
+
+    </div>
+
+    <div id="deletebtn">
+        <button ng-click="doDelete(partyName,currentImageId)" class="transparentButton">
+                <span class="fa-stack fa-l fa-2x" >
+                    <i class="fa fa-circle fa-stack-2x fa-2x"></i>
+                    <i class="fa fa-trash-o fa-stack-1x fa-inverse "></i>
+                </span>
+        </button>
+
+
+    </div>
+
+    <div id="bg">
+        <img ng-src={{currentImage}}>
+    </div>
+</div>

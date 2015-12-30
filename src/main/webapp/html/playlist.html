@@ -1,0 +1,29 @@
+<div ng-controller='partyController'>
+    <div id="playlist" class="box" ng-controller='partyController' >
+        <ul>
+            <li ng-repeat="musicItem in musicItemList">
+                <div class="musicListItem" style="background:url('http://rafaelhenrique.net/djrus/images/img02.png'); background-size: 100% 100%; ">
+                    <div class="musicListItemName">
+                        <span>{{musicItem.album.artist.name}} - {{musicItem.name}}</span>
+                    </div>
+                    <div class="arrows">
+                        <div class="uparrow">
+                            {{musicItem.upVotes}}
+                        </div>
+                        <div class="downarrow">
+                            {{musicItem.downVotes}}
+                        </div>
+                    </div>
+                    <div class="musicListItemPic">
+                        <img src="{{musicItem.avatarUrl}}">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<p>(or <button class="btn btn-primary btn-small" ng-click="getSongs(partyName)">get songs</button>)</p>
+</div>
+
+<h1>testeeeeeeeeee</h1>teste
