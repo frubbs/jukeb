@@ -19,7 +19,7 @@ public class Picture {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
-    @Lob
+    //@Lob
     @Column( length = 100000 )
     private byte[] file;
     //private File file;

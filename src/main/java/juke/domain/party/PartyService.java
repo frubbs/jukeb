@@ -20,6 +20,7 @@ import ma.glasnost.orika.MapperFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.xml.bind.DatatypeConverter;
 import java.io.BufferedOutputStream;
@@ -205,7 +206,7 @@ public class PartyService {
         }
 
     }
-
+    @Transactional
     public void savePicture(String partyName, byte[] bytes) {
 
         Picture pic = new Picture();
@@ -226,6 +227,7 @@ public class PartyService {
         pic.setFile(DatatypeConverter.parseBase64Binary(DatatypeConverter.printBase64Binary(bytes)));
         Party p = partyRepository.findOne(partyName);
         pic.setParty(p);
+
 
         pictureRepository.save(pic);
 

@@ -17,6 +17,7 @@ import javax.persistence.OneToOne;
 public class Party{
     @Id
     private String name;
-    @OneToOne
-    private User owner;
+
+   /* @OneToOne
+    private User owner;*/
 }

@@ -39,9 +39,9 @@ class MMEventHandlers():
             
             import urllib2
             #print json.dumps(song_records, ensure_ascii=False).encode(encoding='latin-1')
-            #url = 'http://jukeb2.herokuapp.com/api/party/rafael/songs'
+            url = 'http://jukeb2.herokuapp.com/api/party/rafael/songs'
             
-            url = 'http://localhost:8080/api/party/rafael/songs'
+            #url = 'http://localhost:8080/api/party/rafael/songs'
             #url='http://requestb.in/13xiwp71'
             data = json.dumps(song_records, ensure_ascii=False).encode(encoding='UTF-8')
             #data = urllib.urlencode(song_records)
