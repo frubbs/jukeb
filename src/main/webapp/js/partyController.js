@@ -54,7 +54,9 @@
         }, 5000, 0);
 
         $scope.snapOpts = {
-            disable: 'right'
+            disable: 'right',
+            maxPosition: 800,
+            minPosition: -266,
         };
 
         $scope.uploadPicture = function(picture){

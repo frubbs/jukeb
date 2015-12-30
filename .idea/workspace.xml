@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="53759ec2-d80b-444d-ae4e-ab82becbda7e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/juke/domain/party/PartyService.java" afterPath="$PROJECT_DIR$/src/main/java/juke/domain/party/PartyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/juke/domain/picture/Picture.java" afterPath="$PROJECT_DIR$/src/main/java/juke/domain/picture/Picture.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/juke/web/party/PartyController.java" afterPath="$PROJECT_DIR$/src/main/java/juke/web/party/PartyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/python/mediamonkey.py" afterPath="$PROJECT_DIR$/src/main/python/mediamonkey.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/main/webapp/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/partyController.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/partyController.js" />
     </list>
     <ignored path="jukeb.iws" />
     <ignored path=".idea/workspace.xml" />

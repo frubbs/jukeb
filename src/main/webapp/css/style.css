@@ -76,17 +76,12 @@ body {
 
 
 
-img{
-    margin:auto;
-    width: 400px;
-}
-
 
 .musicListItemName  {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 1.20em;
+    font-size: 3.20em;
     text-align:left;
     left:50px;
     color: #FFFFFF;
@@ -96,7 +91,7 @@ img{
     position: absolute;
 
     height: 100%;
-    line-height: 70px;
+    line-height: 200px;
 
 }
 
@@ -128,8 +123,8 @@ img{
     /*Border: 5px solid rgba(255, 0, 0, .5);*/
     width:100%;
     /*padding: 0px 0px 10px 0px;*/
-    height: 70px;
-    line-height: 70px;
+    height: 200px;
+    line-height: 200px;
     /*padding: -2px;*/
 
     box-shadow: inset 0 0 1.2em 1.2em #B01E73;
