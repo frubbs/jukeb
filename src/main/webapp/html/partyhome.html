@@ -14,25 +14,37 @@
         <h1><span>j</span>jukeB.net/{{partyName}}</h1>
 
     </div>
-    bem vindo a sua festa ({{partyName}}dd)
+    <!--bem vindo a sua festa ({{partyName}}dd)
     {{currentImage}}
+-->
+    <div ng-controller = "uploadController" id="btnPhoto" >
+        <div ng-show="!uploading">
+            <label for="upload">
+                    <span class="fa-stack fa-l fa-5x">
+                        <i class="fa fa-circle fa-stack-2x fa-5x"></i>
+                        <i class="fa fa-camera fa-stack-1x fa-inverse "></i>
+                    </span>
+                <input type="file"  id="upload" style="display:none" file-model="myFile"/>
+            </label>
+            <button ng-show="fileSet()"  ng-click="uploadFile(partyName)" class="transparentButton">
+                    <span class="fa-stack fa-l fa-3x" >
+                        <i class="fa fa-circle fa-stack-2x fa-3x"></i>
+                        <i class="fa fa-upload fa-stack-1x fa-inverse "></i>
+                    </span>
+            </button>
+        </div>
+        <div ng-show="uploading">
+             <span class="fa-stack fa-l fa-3x" >
+                        <i class="fa fa-circle fa-stack-2x fa-3x"></i>
+                        <i class="fa fa-spinner fa-pulse fa-stack-1x fa-inverse fa-spin"></i>
+             </span>
 
-    <div ng-controller = "uploadController" id="btnPhoto">
-        <label for="upload">
-                <span class="fa-stack fa-l fa-5x">
-                    <i class="fa fa-circle fa-stack-2x fa-5x"></i>
-                    <i class="fa fa-camera fa-stack-1x fa-inverse "></i>
-                </span>
-            <input type="file"  id="upload" style="display:none" file-model="myFile"/>
-        </label>
-        <button ng-show="fileSet()"  ng-click="uploadFile(partyName)" class="transparentButton">
-                <span class="fa-stack fa-l fa-3x" >
-                    <i class="fa fa-circle fa-stack-2x fa-3x"></i>
-                    <i class="fa fa-upload fa-stack-1x fa-inverse "></i>
-                </span>
-        </button>
+        </div>
 
-    </div>
+        </div>
+
+
+
 
     <div id="deletebtn">
         <button ng-click="doDelete(partyName,currentImageId)" class="transparentButton">

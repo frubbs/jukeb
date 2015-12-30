@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53759ec2-d80b-444d-ae4e-ab82becbda7e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/html/dialog.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/juke/domain/party/PartyService.java" afterPath="$PROJECT_DIR$/src/main/java/juke/domain/party/PartyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/juke/domain/song/repository/SongRepository.java" afterPath="$PROJECT_DIR$/src/main/java/juke/domain/song/repository/SongRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/juke/web/config/JukebConfigurableMapper.java" afterPath="$PROJECT_DIR$/src/main/java/juke/web/config/JukebConfigurableMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/juke/web/party/PartyController.java" afterPath="$PROJECT_DIR$/src/main/java/juke/web/party/PartyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/juke/web/song/SongResource.java" afterPath="$PROJECT_DIR$/src/main/java/juke/web/song/SongResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/main/webapp/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/angular-animate/angular-animate.js" afterPath="$PROJECT_DIR$/src/main/webapp/bower_components/angular-animate/angular-animate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/angular-route/angular-route.js" afterPath="$PROJECT_DIR$/src/main/webapp/bower_components/angular-route/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/angular-touch/angular-touch.js" afterPath="$PROJECT_DIR$/src/main/webapp/bower_components/angular-touch/angular-touch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/src/main/webapp/bower_components/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/html/partyhome.html" afterPath="$PROJECT_DIR$/src/main/webapp/html/partyhome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/jukeBModule.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/jukeBModule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/partyController.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/partyController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/uploadController.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/uploadController.js" />
     </list>
     <ignored path="jukeb.iws" />
     <ignored path=".idea/workspace.xml" />

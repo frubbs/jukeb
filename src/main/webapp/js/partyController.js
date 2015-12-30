@@ -6,7 +6,6 @@
         $scope.teste2 = "h2e2l2l2o2 2w2o2r2ld partyController";
 
         $scope.getSongs = function(partyId) {
-            console.log("ghjkl");
             var baseParty = Restangular.all('api');
             baseParty.one('party', partyId)
                 .getList('songs')
@@ -42,7 +41,7 @@
         var slides = $scope.slides = [];
         $scope.currentImageI = 0;
         $interval(function(){
-            console.log("$scope.pictures.length:" + $scope.pictures.length);
+        //    console.log("$scope.pictures.length:" + $scope.pictures.length);
        //     console.log($scope.pictures);
             if($scope.pictures != undefined && $scope.pictures.length > 0) {
                 $scope.currentImageI++;
