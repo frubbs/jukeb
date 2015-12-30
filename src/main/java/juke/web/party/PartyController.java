@@ -274,6 +274,9 @@ public class PartyController {
                     .body(new InputStreamResource(fs));
 
         }
+        catch(NotFoundException e){
+
+        }
         catch (Exception e)
         {
             e.printStackTrace();
