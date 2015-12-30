@@ -50,7 +50,7 @@
                 $scope.currentImage = $scope.pictures[$scope.currentImageI]._links.image.href;
                 $scope.currentImageId = $scope.pictures[$scope.currentImageI].id;
             }
-            console.log("$scope.currentImage:" + $scope.currentImage);
+            //console.log("$scope.currentImage:" + $scope.currentImage);
         }, 5000, 0);
 
         $scope.snapOpts = {
