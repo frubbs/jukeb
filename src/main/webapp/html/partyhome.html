@@ -17,8 +17,8 @@
     </div>
     <!--bem vindo a sua festa ({{partyName}}dd)
     {{currentImage}}
---> <div ng-controller = "uploadController" id="btnPhoto" class="big-icon" ng-hide="hideControls" >
-        <div ng-show="!uploading">
+--> <div ng-controller = "uploadController" id="btnPhoto" class="big-icon" >
+        <div ng-show="!uploading" ng-hide="hideControls" >
             <label for="upload">
                     <span class="fa-stack fa-l fa-3x">
                         <i class="fa fa-circle fa-stack-2x fa-3x"></i>
@@ -32,8 +32,8 @@
                     <i class="fa fa-upload fa-stack-1x fa-inverse "></i>
               </span>
             </button>
-        </div>
-        <div ng-show="uploading" class="big-icon">
+        </div >
+        <div ng-show="uploading" class="big-icon" >
              <span class="fa-stack fa-l fa-3x" >
                         <i class="fa fa-circle fa-stack-2x fa-3x"></i>
                         <i class="fa fa-spinner fa-pulse fa-stack-1x fa-inverse fa-spin"></i>
@@ -55,7 +55,7 @@
 
 
     </div>
-
+    oooooo {{currentImage}}
     <div id="bg">
         <img ng-src={{currentImage}}>
     </div>

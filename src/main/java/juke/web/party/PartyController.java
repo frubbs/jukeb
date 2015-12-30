@@ -17,11 +17,16 @@ import org.springframework.web.bind.annotation.*;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.imageio.IIOImage;
+import javax.imageio.ImageIO;
+import javax.imageio.ImageWriteParam;
+import javax.imageio.ImageWriter;
 import javax.xml.bind.DatatypeConverter;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -271,10 +276,23 @@ public class PartyController {
 
             //FileInputStream fs = new FileInputStream(gridFsFile);
             ByteArrayInputStream  fs = new ByteArrayInputStream(DatatypeConverter.parseBase64Binary(DatatypeConverter.printBase64Binary(p.getFile())));
+
+            BufferedImage originalImage = ImageIO.read(fs);
+            ByteArrayOutputStream os = new ByteArrayOutputStream();
+            ImageWriter writer = (ImageWriter) ImageIO.getImageWritersByFormatName("jpeg").next();
+
+            ImageWriteParam param = writer.getDefaultWriteParam();
+            param.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
+            param.setCompressionQuality(0.2f); // Change this, float between 0.0 and 1.0
+
+            writer.setOutput(ImageIO.createImageOutputStream(os));
+            writer.write(null, new IIOImage(originalImage, null, null), param);
+            writer.dispose();
+
             return ResponseEntity.ok()
                     //.contentLength(fs.getLength())
                     .contentType(MediaType.IMAGE_JPEG)
-                    .body(new InputStreamResource(fs));
+                    .body(new InputStreamResource(new ByteArrayInputStream(os.toByteArray())));
 
         }
         catch(NotFoundException e){
