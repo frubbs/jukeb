@@ -5,19 +5,19 @@
 </div>
 <div id="content" class="scrollable" snap-content snap-options="snapOpts">
 
-    <button class="transparentButton big-icon" snap-toggle="left" ng-click="getSongs(partyName)" id="playlistButton">
+    <button class="transparentButton big-icon" snap-toggle="left" ng-click="getSongs(partyName)" id="playlistButton" ng-hide="hideControls">
             <i class="fa fa-music fa-3x"></i>
             <i class="fa fa-chevron-right fa-3x"></i>
     </button>
 
     <div id="logo">
+        <a ng-click="hideShowCtrl()">exibir/esconder controles</a>
         <h1><span>j</span>jukeB.net/{{partyName}}</h1>
 
     </div>
     <!--bem vindo a sua festa ({{partyName}}dd)
     {{currentImage}}
--->
-    <div ng-controller = "uploadController" id="btnPhoto" class="big-icon" >
+--> <div ng-controller = "uploadController" id="btnPhoto" class="big-icon" ng-hide="hideControls" >
         <div ng-show="!uploading">
             <label for="upload">
                     <span class="fa-stack fa-l fa-3x">
@@ -45,7 +45,7 @@
 
 
 
-    <div id="deletebtn"  class="big-icon"   >
+    <div id="deletebtn"  class="big-icon"  ng-hide="hideControls" >
         <button ng-click="doDelete(partyName,currentImageId)" class="transparentButton">
                 <span class="fa-stack fa-l fa-2x" >
                     <i class="fa fa-circle fa-stack-2x fa-2x"></i>

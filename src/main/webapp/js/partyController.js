@@ -5,6 +5,14 @@
         $scope.teste = "hello world partyController";
         $scope.teste2 = "h2e2l2l2o2 2w2o2r2ld partyController";
 
+        $scope.hideControls = $routeParams.hideControls;
+
+        $scope.hideShowCtrl = function(){
+            $location.search('hideControls', !$scope.hideControls);
+            $scope.hideControls = !$scope.hideControls;
+
+        }
+
         $scope.getSongs = function(partyId) {
             var baseParty = Restangular.all('api');
             baseParty.one('party', partyId)
@@ -57,9 +65,12 @@
             return $window.innerWidth;
         }, function(value) {
             console.log(value);
+            var max =  (value*0.85);
+            if (max > 800) {max = 800}
+
             $scope.snapOpts = {
                 disable: 'right',
-                maxPosition: value*0.85,
+                maxPosition: max,
                 minPosition: -266,
             };
         });
