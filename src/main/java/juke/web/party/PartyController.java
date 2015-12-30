@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.*;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.xml.bind.DatatypeConverter;
+
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
@@ -265,9 +267,10 @@ public class PartyController {
                 throw new NotFoundException();
             }
 
-            File gridFsFile = p.getFile();
+           // File gridFsFile = p.getFile();
 
-            FileInputStream fs = new FileInputStream(gridFsFile);
+            //FileInputStream fs = new FileInputStream(gridFsFile);
+            ByteArrayInputStream  fs = new ByteArrayInputStream(DatatypeConverter.parseBase64Binary(DatatypeConverter.printBase64Binary(p.getFile())));
             return ResponseEntity.ok()
                     //.contentLength(fs.getLength())
                     .contentType(MediaType.IMAGE_JPEG)

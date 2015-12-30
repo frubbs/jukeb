@@ -21,6 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
+import javax.xml.bind.DatatypeConverter;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -208,7 +209,7 @@ public class PartyService {
     public void savePicture(String partyName, byte[] bytes) {
 
         Picture pic = new Picture();
-
+/*
         String fileName = "src/test/resources/" + java.util.UUID.randomUUID();
 
         BufferedOutputStream stream = null;
@@ -219,9 +220,10 @@ public class PartyService {
     } catch (Exception e) {
         e.printStackTrace();
     }
+*/
+       // pic.setFile(new File(fileName));
 
-        pic.setFile(new File(fileName));
-
+        pic.setFile(DatatypeConverter.parseBase64Binary(DatatypeConverter.printBase64Binary(bytes)));
         Party p = partyRepository.findOne(partyName);
         pic.setParty(p);
 
