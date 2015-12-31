@@ -31,7 +31,7 @@ body {
 }
 #logo h1
 {
-    font-family: logoFont;
+    font-family: medium Consolas, "Andale Mono", Monaco, "Liberation Mono", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", monospace;
 }
 
 #bg {

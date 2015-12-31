@@ -4,15 +4,15 @@
     <button class="btn btn-primary btn-small" snap-close>Fechar</button>
 </div>
 <div id="content" class="scrollable" snap-content snap-options="snapOpts">
-
+<!--
     <button class="transparentButton big-icon" snap-toggle="left" ng-click="getSongs(partyName)" id="playlistButton" ng-hide="hideControls">
             <i class="fa fa-music fa-3x"></i>
             <i class="fa fa-chevron-right fa-3x"></i>
     </button>
-
+-->
     <div id="logo">
-        <a ng-click="hideShowCtrl()">exibir/esconder controles</a>
-        <h1><span>j</span>jukeB.net/{{partyName}}</h1>
+        <h3><a ng-click="hideShowCtrl()">Envie suas fotos acessando:</a></h3>
+        <h1><span>j</span>jukeB.net/#/{{partyName}}</h1>
 
     </div>
     <!--bem vindo a sua festa ({{partyName}}dd)
@@ -55,7 +55,7 @@
 
 
     </div>
-    oooooo {{currentImage}}
+    {{currentImageId}}-{{pictures.length}}
     <div id="bg">
         <img ng-src={{currentImage}}>
     </div>
