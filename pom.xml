@@ -67,9 +67,9 @@
             <version>1.4</version>
         </dependency>
         <dependency>
-            <groupId>org.postgresql</groupId>
+            <groupId>postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>9.3-1100-jdbc41</version>
+            <version>9.0-801.jdbc4</version>
         </dependency>
 
         <dependency>
