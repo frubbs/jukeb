@@ -30,7 +30,14 @@ class MMEventHandlers():
                 print 'Current fruit :', self.Player.CurrentSongList.Item(index).Title[:40], 'ioioi',  self.Player.CurrentSongList.Item(index).Artist.Name[:40]
                 song_name =  self.Player.CurrentSongList.Item(index).Title[:40]
                 song_artist = self.Player.CurrentSongList.Item(index).Artist.Name[:40]
-                record = {"name":song_name, "album": {"name":song_artist, "artist":{"name":song_artist}}}
+                idx = str(index)
+                
+                songStatus = "QUEUED"
+                if index == isong:
+                    songStatus = "PLAYING"
+                if index < isong:
+                    songStatus = "PLAYED"
+                record = {"name":song_name, "songStatus":songStatus, "listPosition":idx, "album": {"name":song_artist, "artist":{"name":song_artist}}}
                 song_records.append(record)
 
             song_dict["song"]=song_records
@@ -38,10 +45,10 @@ class MMEventHandlers():
             import json
             
             import urllib2
-            #print json.dumps(song_records, ensure_ascii=False).encode(encoding='latin-1')
-            url = 'http://jukeb2.herokuapp.com/api/party/rafael/songs'
+            print json.dumps(song_records, ensure_ascii=False).encode(encoding='latin-1')
+            #url = 'http://jukeb2.herokuapp.com/api/party/rafael/songs'
             
-            #url = 'http://localhost:8080/api/party/rafael/songs'
+            url = 'http://localhost:8080/api/party/rafael/songs'
             #url='http://requestb.in/13xiwp71'
             data = json.dumps(song_records, ensure_ascii=False).encode(encoding='UTF-8')
             #data = urllib.urlencode(song_records)

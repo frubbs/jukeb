@@ -42,7 +42,7 @@ public class JukebConfigurableMapper extends ConfigurableMapper
 
             factory.classMap(Song.class, SongResource.class)
                     .byDefault()
-                    .customize(new CustomMapper<Song, SongResource>() {
+/*                    .customize(new CustomMapper<Song, SongResource>() {
                         @Override
                         public void mapAtoB(Song song, SongResource songResource, MappingContext context) {
                             super.mapAtoB(song, songResource, context);
@@ -55,7 +55,7 @@ public class JukebConfigurableMapper extends ConfigurableMapper
                                 songResource.setDownvotes(downvotes.intValue());
                             }
                         }
-                    })
+                    })*/
                     .register();
 
             factory.classMap(Song.class, Song.class).exclude("id").mapNulls(false).mapNullsInReverse(false).byDefault().register();

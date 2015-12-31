@@ -97,6 +97,8 @@ public class PartyController {
     */
     @RequestMapping(method = RequestMethod.PATCH, value="/{party-name}/songs")
     public Object patch(@PathVariable("party-name") String partyName, @RequestBody List<SongResource> resource){
+        System.out.println("orcder:" + resource.get(6).getSongStatus());
+
         partyService.updatePartySongs(partyName, mapperFacade.mapAsList(resource, Song.class));
 
         return null;

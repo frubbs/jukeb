@@ -1,6 +1,6 @@
 package juke.domain.song;
 
-import juke.domain.user.User;
+import juke.domain.user.PartyUser;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,7 +17,7 @@ public class Vote {
     private int vote;
 
     @ManyToOne
-    private User voter;
+    private PartyUser voter;
 
   /*  @ManyToOne
     private Song song;*/

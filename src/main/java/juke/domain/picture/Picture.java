@@ -1,12 +1,11 @@
 package juke.domain.picture;
 
 import juke.domain.party.Party;
-import juke.domain.user.User;
+import juke.domain.user.PartyUser;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.io.File;
 
 /**
  * Created by rafa on 20/12/2015.
@@ -25,7 +24,7 @@ public class Picture {
     //private File file;
 
     @ManyToOne
-    private User uploader;
+    private PartyUser uploader;
 
     @ManyToOne
     private Party party;

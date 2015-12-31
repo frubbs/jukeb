@@ -23,6 +23,7 @@ public class SongResource extends Resource {
     private int downvotes;
     private UserResource proposer;
 
+    private long listPosition;
     private SongStatus songStatus;
 
 

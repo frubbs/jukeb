@@ -1,11 +1,16 @@
 <div ng-controller='partyController'>
+    <button ng-click="gotoPlaying()">Go to bottom</button>
     <button class="btn btn-primary btn-small" ng-click="getSongs(partyName)">atualizar</button>
     <div id="playlist" class="box" ng-controller='partyController' >
         <ul>
             <li ng-repeat="musicItem in musicItemList">
-                <div class="musicListItem" style="background:url('http://rafaelhenrique.net/djrus/images/img02.png'); background-size: 100% 100%; ">
+                <div class="musicListItem"
+                     style="background:url('http://rafaelhenrique.net/djrus/images/img02.png');
+                     background-size: 100% 100%";
+                     ng-style="myStyleFunction(musicItem)"
+                     ng-attr-id={{musicItem.songStatus}}>
                     <div class="musicListItemName">
-                        <span>{{musicItem.name}} ({{musicItem.album.artist.name}})</span>
+                        <span>{{musicItem.songStatus}}-{{musicItem.name}} ({{musicItem.album.artist.name}})</span>
                     </div>
                     <div class="arrows">
                         <div class="uparrow">
@@ -23,7 +28,6 @@
         </ul>
     </div>
 </div>
-
 
 
 <h1>Playlist</h1>

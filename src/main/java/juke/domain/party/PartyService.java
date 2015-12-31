@@ -8,7 +8,7 @@ import juke.domain.song.repository.AlbumRepository;
 import juke.domain.song.repository.ArtistRepository;
 import juke.domain.song.repository.SongRepository;
 import juke.domain.song.repository.VoteRepository;
-import juke.domain.user.User;
+import juke.domain.user.PartyUser;
 import juke.domain.user.UserRepository;
 import juke.exception.NotFoundException;
 import juke.domain.song.Song;
@@ -23,9 +23,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.xml.bind.DatatypeConverter;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -100,7 +97,7 @@ public class PartyService {
 
     public void voteSong(String partyName, Long songId, Vote vote) {
 
-        User user = null;
+        PartyUser user = null;
         if (vote.getVoter() != null && vote.getVoter().getId() != 0)
              user = userRepository.findOne(vote.getVoter().getId());
 
@@ -151,6 +148,16 @@ public class PartyService {
 
         Stream<Song> orderedSongs = songs.stream()
                 .sorted(
+                        (o1, o2) -> Long.compare(
+                                o1.getListPosition(),
+                                o2.getListPosition()
+                        )
+                );
+        return orderedSongs.collect(Collectors.toList());
+
+/*
+        Stream<Song> orderedSongs = songs.stream()
+                .sorted(
                     (o1, o2) -> Long.compare(
                                 o2.getVotes().stream().collect(Collectors.summingInt(Vote::getVote)),
                                 o1.getVotes().stream().collect(Collectors.summingInt(Vote::getVote))
@@ -163,6 +170,9 @@ public class PartyService {
                     )
                 );
         return orderedSongs.collect(Collectors.toList());
+        */
+
+        //return songs;
     }
 
     public List<Vote> getVotes(String partyName, Long songId) {

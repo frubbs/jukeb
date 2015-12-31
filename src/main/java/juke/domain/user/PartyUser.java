@@ -15,7 +15,7 @@ import java.net.URI;
 @Getter
 @Setter
 @Entity
-public class User {
+public class PartyUser {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;

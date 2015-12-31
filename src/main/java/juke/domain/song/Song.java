@@ -1,7 +1,6 @@
 package juke.domain.song;
 
 import juke.domain.party.Party;
-import juke.domain.user.User;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
@@ -35,8 +34,9 @@ public class Song {
     @OneToMany
     private List<Vote> votes;
 
-    @ManyToOne
-    private User proposer;
+    private long listPosition;
+    //@ManyToOne
+   // private PartyUser proposer;
 
    // @Type(type = "org.jadira.usertype.dateandtime.threeten.PersistentZonedDateTime")
     @CreatedDate

@@ -1,9 +1,34 @@
 (function () {
     "use strict";
-    angular.module("jukeB").controller("partyController", ["$scope","Restangular", '$routeParams',"ngDialog","$location","$interval",'$window',
-    function($scope, Restangular, $routeParams, ngDialog, $location, $interval, $window) {
+    angular.module("jukeB").controller("partyController",
+        ["$scope","Restangular", '$routeParams',"ngDialog",
+            "$location","$interval",'$window', '$anchorScroll',
+            "snapRemote",
+    function($scope, Restangular, $routeParams, ngDialog, $location, $interval, $window, $anchorScroll, snapRemote) {
         $scope.teste = "hello world partyController";
         $scope.teste2 = "h2e2l2l2o2 2w2o2r2ld partyController";
+
+        snapRemote.getSnapper().then(function(snapper) {
+            snapper.on('open', function() {
+                $location.hash('PLAYING');
+
+                // call $anchorScroll()
+                $anchorScroll();
+            });
+/*
+            snapper.on('close', function() {
+                log('Drawer closed!');
+            });*/
+        });
+
+        $scope.gotoPlaying = function() {
+            // set the location.hash to the id of
+            // the element you wish to scroll to.
+            $location.hash('PLAYING');
+
+            // call $anchorScroll()
+            $anchorScroll();
+        };
 
         $scope.hideControls = $routeParams.hideControls;
 
@@ -21,8 +46,24 @@
                     $scope.musicItemList = songs;
                     console.log('songs');
                     console.log(songs);
+
                 });
         };
+
+        $scope.myStyleFunction = function(song) {
+            //console.log('songStatus');
+            //console.log(song.songStatus);
+            if (song.songStatus == 'PLAYING') {
+                return {'color': '#DDDDDD'};
+                $location.hash('PLAYING');
+
+                // call $anchorScroll()
+                $anchorScroll();
+            }
+            else{
+                return {'left': '300px'};
+            }
+        }
 
         $scope.doDelete = function(partyName, id){
             console.log("delete party:" + partyName + " id:" + id);
