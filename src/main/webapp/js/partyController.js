@@ -85,7 +85,7 @@
                 $scope.currentImageId = $scope.pictures[$scope.currentImageI].id;
             }
             //console.log("$scope.currentImage:" + $scope.currentImage);
-        }, 5000, 0);
+        }, 10000, 0);
 
         $scope.$watch(function(){
             return $window.innerWidth;

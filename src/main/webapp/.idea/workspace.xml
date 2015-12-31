@@ -57,21 +57,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partyController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="partyController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/partyController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="30" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.84753364">
+              <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jukeBModule.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jukeBModule.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jukeBModule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.514574">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -125,11 +125,11 @@
         <option value="$PROJECT_DIR$/css/ngDialogStyle.css" />
         <option value="$PROJECT_DIR$/html/deletePicture.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/partyController.js" />
         <option value="$PROJECT_DIR$/html/playlist.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/html/partyhome.html" />
         <option value="$PROJECT_DIR$/js/jukeBModule.js" />
+        <option value="$PROJECT_DIR$/js/partyController.js" />
       </list>
     </option>
   </component>
@@ -720,18 +720,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/partyController.js">
+    <entry file="file://$PROJECT_DIR$/js/jukeBModule.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="30" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="30" />
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jukeBModule.js">
+    <entry file="file://$PROJECT_DIR$/js/partyController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.514574">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.84753364">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
           <folding />
         </state>
       </provider>
