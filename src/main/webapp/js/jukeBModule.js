@@ -17,7 +17,7 @@
     angular.module("jukeB").config(["$routeProvider", function ($routeProvider, $scope) {
         $routeProvider
             .when("/", {
-                templateUrl: "html/home.html"
+                redirectTo: "/vilma"
             })
             .when("/:partyid/", {
                 controller: "partyController",
@@ -25,7 +25,7 @@
             })
 
             .otherwise({
-                redirectTo: "/notFound"
+                redirectTo: "/vilma"
             })
 
     }]);//fim config
