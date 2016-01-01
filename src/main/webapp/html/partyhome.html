@@ -56,7 +56,11 @@
 
     </div>
     {{currentImageId}}-{{pictures.length}}
-    <div id="bg">
+   <!-- <div id="bg">
         <img ng-src={{currentImage}}>
+    </div>
+    -->
+    <div ng-repeat="image in pictures">
+        <img ng-src={{image._links.image.href}}>
     </div>
 </div>
