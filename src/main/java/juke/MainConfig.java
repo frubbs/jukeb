@@ -8,11 +8,11 @@ import org.springframework.context.annotation.Configuration;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-//@Configuration
-//@ComponentScan(basePackages = "juke")
+@Configuration
+@ComponentScan(basePackages = "juke")
 public class MainConfig {
 
-    //@Bean
+    @Bean
     public BasicDataSource dataSource() throws URISyntaxException {
         String DBURL = "postgres://lkluyrjftapmnr:RXV3pD55Qs7RKzTkGGZzz0Alqa@ec2-107-22-170-249.compute-1.amazonaws.com:5432/ddus4l7hg555dc";
 
